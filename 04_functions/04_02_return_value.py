@@ -84,3 +84,30 @@ tripler = factor(3)
 
 print(doubler(20))  # doubler(20) -> inner(20) с a = 2 -> 2*20 -> 40
 print(tripler(20))  # tripler(20) -> inner(20) с a = 3 -> 3*20 -> 60
+
+print(f"Лямбда функции:")
+
+""" adder = lambda a, b: a + b  можно сохранить функцию в переменную
+lamba создаён анонимную функцию
+до двоеточия указываются принимаемые значения
+после двоеточия указываются возвращаемые значения"""
+#  Лучше явно указать что это функция:
+
+
+def adder(a, b):
+    return a + b
+
+
+print(f"Пример анонимной функции 5 + 2: {adder(5, 2)}")
+
+print(f"Функция возвращающая анонимную функцию:")
+# аналогично примеру factor возвращающего функцию
+
+
+def factor_lmd(a):
+    return lambda b: b * a
+
+
+doubler_lmd = factor_lmd(2)
+
+print(doubler_lmd(20))
