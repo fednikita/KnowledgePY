@@ -150,3 +150,25 @@ else:
 
 finally:
     print('Программа завершила работу.')
+
+print(f"\nПроверка деления на любые ошибки try except else finally, с использованием pass:")
+
+try:
+    n1 = int(input('Введите делимое: '))
+    n2 = int(input('Введите делитель: '))
+
+    print("Частное =", n1 / n2)
+
+except ValueError:
+    print('Введите целое число!')
+
+except ZeroDivisionError:
+    print('Делитель не может быть равно нулю!')
+
+except Exception:
+    pass
+else:
+    print('Деление успешно завершено!')
+
+finally:
+    print('Программа завершила работу.')
