@@ -151,7 +151,8 @@ else:
 finally:
     print('Программа завершила работу.')
 
-print(f"\nПроверка деления на любые ошибки try except else finally, с использованием pass:")
+print(f"\nПроверка деления на любые ошибки try except else finally.")
+print(f"Пример использования pass:")
 
 try:
     n1 = int(input('Введите делимое: '))
