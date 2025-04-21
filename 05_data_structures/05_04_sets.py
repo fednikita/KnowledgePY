@@ -31,3 +31,20 @@ print(
     fruits == fruits_mixed,
 )
 # Результат true
+
+print("\nОперации с элеменатми множеств")
+print("Добавление элемента cherry в множество fruits")
+fruits.add('cherry')
+print(fruits)
+
+print("\nУдаление элемента cherry")
+fruits.remove('cherry')
+print("Результат:", fruits)
+
+print("\nУдаление случайного элемента")
+print("Удаляемый элемент:", fruits.pop())
+print("Результат:", fruits)
+
+print("\nУдаление всех элементов fruits")
+fruits.clear()
+print("Результат:", fruits)
