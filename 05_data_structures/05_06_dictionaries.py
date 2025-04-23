@@ -52,3 +52,30 @@ print('\nПеребор элементов словаря:')
 for key, value in person1.items():
     # возвращает пару ключ: значение и распаковывает их
     print(f'Ключ {key} соответствует значению {value}')
+
+print('\nОбновление словаря:')
+print("Метод update, обновим словарь person1 добавив ключ gender")
+person1.update({'gender': 'male'})
+print("Результат:", person1)
+
+print("Метод update, принимает любые итерируемые данные")
+person2.update([('gender', 'male'), ('name', 'Alex')])
+print("Результат:", person2)
+
+print('\nУдаление элементов:')
+print("Метод del, удалим ключ gender")
+del person2['gender']
+print(person2)
+
+print("\nМетод pop, удаляет ключ age и возвращает значение")
+print("Удалим ключ age, содержащий значение:", person2.pop('age'))
+print(person2)
+
+print("\nМетод popitem, удаляет последний добавленный элемент:")
+# Если добавленных элементов нет, будет удалён последний элемент словаря
+print(person2.popitem())
+print(person2)
+
+print("\nМетод clear, удаляет все элементы словаря:")
+person2.clear()
+print(person2)
